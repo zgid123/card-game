@@ -1,0 +1,36 @@
+{
+  "name": "@libs/rc-utils",
+  "version": "0.0.1",
+  "license": "MIT",
+  "exports": {
+    "./useForm": "./src/useForm.ts",
+    "./queryHooks": "./src/queryHooks/index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "useForm": [
+        "./src/useForm.ts"
+      ],
+      "queryHooks": [
+        "./src/queryHooks/index.ts"
+      ]
+    }
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.2.1",
+    "@tanstack/react-query-devtools": "^4.2.1",
+    "ramda": "^0.28.0",
+    "react": "^18.1.0",
+    "react-hook-form": "^7.34.2"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.28.15",
+    "@types/react": "^18.0.17",
+    "axios": "^0.27.2",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.5.0"
+  }
+}

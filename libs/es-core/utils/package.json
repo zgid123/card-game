@@ -1,0 +1,33 @@
+{
+  "name": "@libs/es-core-utils",
+  "version": "0.0.1",
+  "license": "MIT",
+  "exports": {
+    "./api": "./src/api/index.ts",
+    "./dateUtils": "./src/dateUtils.ts",
+    "./moneyUtils": "./src/moneyUtils.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "api": [
+        "./src/api/index.ts"
+      ],
+      "dateUtils": [
+        "./src/dateUtils.ts"
+      ],
+      "moneyUtils": [
+        "./src/moneyUtils.ts"
+      ]
+    }
+  },
+  "dependencies": {
+    "@libs/es-core-auth-services": "workspace:^0.0.1",
+    "axios": "^0.27.2",
+    "date-fns": "^2.29.1",
+    "query-string": "^7.1.1",
+    "ramda": "^0.28.0"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.28.15"
+  }
+}

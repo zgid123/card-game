@@ -1,0 +1,32 @@
+{
+  "moduleNameMapper": {
+    "^db(.*)$": "<rootDir>/db$1",
+    "^api(.*)$": "<rootDir>/api$1",
+    "^config(.*)$": "<rootDir>/config$1",
+    "^app.module$": "<rootDir>/app.module",
+    "^utils/hash$": "<rootDir>/utils/hash",
+    "^commons(.*)$": "<rootDir>/commons$1",
+    "^services(.*)$": "<rootDir>/services$1",
+    "^__tests__(.*)$": "<rootDir>/__tests__$1",
+    "^utils/slugify$": "<rootDir>/utils/slugify",
+    "^exceptions(.*)$": "<rootDir>/exceptions$1",
+    "^app.controller$": "<rootDir>/app.controller",
+    "^mikro-orm.config$": "<rootDir>/mikro-orm.config"
+  },
+  "maxWorkers": 1,
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": "src",
+  "testRegex": ".*\\.spec\\.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "collectCoverageFrom": [
+    "**/*.(t|j)s"
+  ],
+  "coverageDirectory": "../coverage",
+  "testEnvironment": "node"
+}
